@@ -83,6 +83,9 @@ players card style
 .transition {
   overflow: hidden;
 }
+.player p{
+  font-size: 16px;
+}
 .player {
   padding: 15px;
   width: 330px;
