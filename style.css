@@ -1,0 +1,335 @@
+/* -------------------
+google font poppins
+--------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* --------------------------------
+    header style start
+------------------------------ */
+header {
+  background-color: crimson;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header_title p {
+  font-weight: 700;
+  font-size: 64px;
+  /* line-height: 80px; */
+  color: white;
+  margin-bottom: 40px;
+}
+.header_image {
+  margin-top: 20px;
+  position: relative;
+  animation: animation 2s infinite;
+}
+.header_title a {
+  text-decoration: none;
+
+  padding: 10px 24px;
+  color: white;
+  border-radius: 30px;
+  border: 1px solid white;
+  transition: linear 1s;
+}
+
+.header_title a:hover {
+  color: black;
+  background-color: skyblue;
+}
+.header_image img {
+  width: 556.01px;
+  height: 438px;
+}
+@keyframes animation {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* ---------------------
+players card style
+------------------------------ */
+
+.players_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+
+  row-gap: 27px;
+  /* align-items: center; */
+  justify-items: center;
+  /* margin-left: 210px;
+  margin-right: 180px;
+  margin-top: 70px; */
+  margin: 70px 180px 70px 180px;
+}
+.transition {
+  overflow: hidden;
+}
+.player {
+  padding: 15px;
+  width: 330px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+}
+.player img {
+  overflow: hidden;
+  width: 300px;
+  height: 256px;
+  transition: transform 0.5s;
+}
+.player img:hover {
+  transform: scale(1.2);
+}
+/* ---------------------------------
+news section
+-------------------------------- */
+.news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news span {
+  font-size: 35px;
+  font-weight: bold;
+  background-color: crimson;
+  color: white;
+  padding: 5px 50px;
+  border-radius: 30px;
+}
+.moving_news {
+  margin: 20px 0px;
+  font-size: 15px;
+}
+.news_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  column-gap: 5px;
+  row-gap: 15px;
+  /* border: 1px solid red; */
+  margin: 10px 60px 26px 60px;
+}
+.news_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px;
+  /* border: 1px solid green; */
+}
+
+.image {
+  margin-right: 15px;
+  width: 300px;
+  height: 256px;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+.image:hover {
+  transform: translateY(-20px);
+}
+.news_card a {
+  transition: linear 0.5s;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid rgba(23, 25, 190, 0.835);
+  color: black;
+  padding: 3px 10px;
+  border-radius: 25px;
+}
+.news_card a:hover {
+  background-color: crimson;
+  color: white;
+}
+/* ----------------------------------
+form style
+------------------------------- */
+.form_container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px grey;
+  /* border: 1px solid red; */
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+label {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+input {
+  padding: 5px 10px;
+  font-size: 15px;
+  outline: 0;
+  border-radius: 5px;
+}
+.checkbox {
+  margin: 20px 0px;
+}
+.checkbox span {
+  /* padding: 5px 10px; */
+  font-size: 20px;
+}
+.form_container a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: crimson;
+}
+/* ---------------------------------
+Footer style
+-----------------------------------*/
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social_icon {
+  margin: 20px 0px;
+}
+.social_icon i {
+  padding-right: 14px;
+}
+.copyright {
+  margin-bottom: 63px;
+}
+/*------------------------
+media query
+--------------------------*/
+/* mobile devices */
+@media only screen and (max-width: 688px) {
+  /* header section responsive */
+  .header_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 16px;
+  }
+  .header_title p {
+    font-size: 36px;
+  }
+  .header_image {
+    margin-top: 50px;
+  }
+  .header_image img {
+    width: 329px;
+    height: 259.17px;
+  }
+
+  /* players card section */
+
+  .players_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: 47px 0px 47px 12px;
+    justify-items: center;
+  }
+  /* footer section */
+  .footer_logo img {
+    width: 330px;
+  }
+  /* news section */
+  .news_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    justify-items: center;
+    margin: 47px 0px 47px 12px;
+  }
+  .news_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 330px;
+    /* margin-left: 0px; */
+  }
+}
+
+/* ---------------------
+tablet devices
+-----------------------------*/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  /* header section */
+  .header_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_image {
+    margin-top: 50px;
+  }
+  .header_title p {
+    font-size: 50px;
+  }
+
+  /* players card section */
+  .players_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 70px 0px 70px 20px;
+    justify-items: center;
+    column-gap: normal;
+  }
+  /* form section */
+  .form_container {
+    width: 300px;
+    margin: 30px 30px;
+  }
+  /* footer section */
+  .footer_logo img {
+    width: 89%;
+  }
+  /* news section */
+  .news_container {
+    width: 100%;
+    margin: 47px 0px 47px 11px;
+    column-gap: 5px;
+  }
+
+  .news_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin-left: 47px;
+  }
+  .news_card p {
+    margin-left: 24px;
+  }
+  /* form section */
+  .form_container {
+    margin-left: 200px;
+  }
+}
